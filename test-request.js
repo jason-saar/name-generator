@@ -20,3 +20,10 @@ const e = await get({ kind: "person" });
 const f = await get({ kind: "place" });
 const g = await get({ kind: "thing" });
 console.log(e.names[0], "|", f.names[0], "|", g.names[0]);
+
+// Test themes
+const h = await get({ kind: "person" });
+const i = await get({ kind: "place"});
+const j = await get({ kind: "person", theme: "nautical" });
+const k = await get({ kind: "place", theme: "nautical"});
+console.log("high_fantasy:", h.names[0], "|", i.names[0], "\nnautical:", j.names[0], "|", k.names[0]);
