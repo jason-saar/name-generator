@@ -1,0 +1,25 @@
+{
+  "name": "name-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "name-gen.js",
+  "scripts": {
+    "start": "node name-gen.js",
+    "test": "node test-request.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-saar/name-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jason-saar/name-generator/issues"
+  },
+  "homepage": "https://github.com/jason-saar/name-generator#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
