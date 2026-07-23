@@ -1,0 +1,30 @@
+{
+    "person": {
+        "given": [
+            "Vaelith", "Thessaly", "Orimar", "Bruknar", "Sella", "Duvik",
+            "Ysolde", "Grimbold", "Nithara", "Fendrel", "Ottavia", "Karsk"
+        ],
+        "surname": [
+            "Emberdelve", "Silvanth", "Coppervane", "Ashmourn", "Tunnelwrit",
+            "Quillhollow", "Ironbraid", "Nevermoor", "Gearfast", "Thelanor"
+        ],
+        "title": ["Ser", "Loremaster", "Deepwarden", "Tinker", "Highsong"]
+        },
+    "place": {
+        "adjective": [
+            "Thal", "Grum", "Fen", "Oss", "Bright", "Under", "Kel", "Wyr"
+        ],
+        "noun": [
+            "delve", "spire", "hollow", "mere", "forge", "reach", "burrow", "shade"
+        ],
+        "suffix": ["Gate", "Deep", "Wold", "Warren", "Hall"]
+        },
+    "thing": {
+        "adjective": [
+            "Riven", "Gilded", "Cogbound", "Hollow", "Everbright", "Warded", "Sunder"
+        ],
+        "noun": [
+            "Cog", "Chalice", "Sigil", "Bellows", "Codex", "Lantern", "Reliquary", "Ingot"
+        ]
+    }
+}
