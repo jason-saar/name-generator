@@ -1,0 +1,31 @@
+{
+    "person": {
+        "given": [
+        "Halvard", "Mira", "Tarrin", "Sabra", "Corwin", "Ondine",
+        "Vesh", "Reyna", "Malick", "Perrin", "Idris", "Calla"
+        ],
+        "surname": [
+        "Saltgrave", "Creel", "Drownwell", "Vance", "Harrow", "Brack",
+        "Netherby", "Gallowmere", "Fathom", "Corpsewake"
+        ],
+        "title": ["Captain", "Bosun", "First Mate", "Helmsman", "Old", "Quartermaster"]
+    },
+    "place": {
+        "adjective": [
+        "Harrow", "Black", "Salt", "Mourn", "Cold", "Grim", "Wrack", "Gallow"
+        ],
+        "noun": [
+        "port", "reef", "haven", "wharf", "shoal", "gibbet", "cove", "strand",
+        "holm", "fjord","firth", "dock", "mouth"
+        ],
+        "suffix": ["Bay", "Point", "Anchorage", "Sound", "Narrows"]
+    },
+    "thing": {
+        "adjective": [
+        "Salted", "Drowned", "Iron", "Sable", "Weathered", "Barnacled", "Rusted"
+        ],
+        "noun": [
+        "Anchor", "Lantern", "Compass", "Sextant", "Tiller", "Hawser", "Bell", "Chart"
+        ]
+    }
+}
