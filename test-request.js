@@ -14,3 +14,9 @@ console.log("seeded:", a.names[0], "|", b.names[0], a.names[0] === b.names[0] ? 
 const c = await get({ kind: "person" });
 const d = await get({ kind: "person" });
 console.log("unseeded", c.names[0], `(${c.seed})`, "|", d.names[0], `(${d.seed})`);
+
+// Test patterns
+const e = await get({ kind: "person" });
+const f = await get({ kind: "place" });
+const g = await get({ kind: "thing" });
+console.log(e.names[0], "|", f.names[0], "|", g.names[0]);
