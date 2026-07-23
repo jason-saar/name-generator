@@ -12,3 +12,13 @@ for (const file of fs.readdirSync(WORDLIST_DIR)) {
     const name = path.basename(file, ".json");
     themes[name] = JSON.parse(fs.readFileSync(path.join(WORDLIST_DIR, file), "utf-8"));
 }
+
+// TODO: rewrite to use seed
+function pick(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
+// TODO: rewrite to pattern match names
+export function generateName(kind, theme) {
+    return pick(themes[theme][kind].given);
+}
