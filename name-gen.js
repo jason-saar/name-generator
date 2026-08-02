@@ -23,10 +23,25 @@ app.get("/generate", (req, res) => {
         });
     }
 
-    const actualSeed = seed ? parseInt(seed) : Math.floor(Math.random() * 2 ** 32);
+    let actualSeed;
+    if (seed !== undefined) {
+        // parse int base 10
+        const parsedSeed = parseInt(seed, 10);
+        if (!Number.isInteger(parsedSeed)) {
+            return res.status(400).json({
+                error: "seed must be an intenger"
+            });
+        }
+        actualSeed = parsedSeed;
+    } else {
+        actualSeed = Math.floor(Math.random() * 2 ** 32);
+    }
+
     const rng = splitmix32(actualSeed);
 
-    // test res
+    // TODO: names array, for loop pushes generated names count times
+    // update res.json to return names array
+
     res.json({
         names: [generateName(kind, theme, rng)],
         theme: theme,
