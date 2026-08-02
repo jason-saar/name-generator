@@ -31,3 +31,7 @@ console.log("high_fantasy:", h.names[0], "|", i.names[0], "\nnautical:", j.names
 // Test count
 const l = await get({ kind: "thing", count: 5 });
 console.log("count=5:", l.names.length === 5 ? "pass" : "fail", l.names)
+
+// Test out of range count
+const m = await get({ kind: "thing", count: 51 });
+console.log("count=51", m.error ? `pass (${m.error})` : "fail, no error returned");
