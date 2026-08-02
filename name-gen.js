@@ -41,11 +41,15 @@ app.get("/generate", (req, res) => {
 
     const rng = splitmix32(actualSeed);
 
-    // TODO: names array, for loop pushes generated names count times
-    // update res.json to return names array
+    // names array, for loop pushes generated names count times
+    const names = [];
+
+    for (let i = 0; i < parseInt(count, 10); i++) {
+        names.push(generateName(kind, theme, rng));
+    }
 
     res.json({
-        names: [generateName(kind, theme, rng)],
+        names: names,
         theme: theme,
         seed: actualSeed
     })
