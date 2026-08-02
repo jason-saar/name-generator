@@ -27,3 +27,7 @@ const i = await get({ kind: "place"});
 const j = await get({ kind: "person", theme: "nautical" });
 const k = await get({ kind: "place", theme: "nautical"});
 console.log("high_fantasy:", h.names[0], "|", i.names[0], "\nnautical:", j.names[0], "|", k.names[0]);
+
+// Test count
+const l = await get({ kind: "thing", count: 5 });
+console.log("count=5:", l.names.length === 5 ? "pass" : "fail", l.names)
