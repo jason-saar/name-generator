@@ -28,7 +28,7 @@ const res = await fetch(`http://localhost:5553/generate?${params}`);
 
 The microservice responds with a JSON object: a names array of generated strings, plus the theme and seed that were used. If a seed is not provided, the service generates one and uses it to produce the results. Returning the seed is crucial to allow results to be replicable. The respone always includes an array regardless of how many names were returned, so the caller doesn't need to handle different response shapes.
 
-If the requested theme wordlist doesn't exist, or count is out of range, the service returns 400 with a JSON error object instead.
+If kind is missing, the requested theme worldlist doesn't exist, count is out of range [1, 50], or seed is not a valid integer, the service returns 400 with a JSON error object.
 
 ```json
 {
@@ -51,6 +51,3 @@ if (res.status === 200) {
 ### UML Sequence Diagram
 
 See name_gen.png in this repo
-
-> Note: count-based looping and request validation are not yet implemented in the current handler.
-> This diagram documents the intended behavior, which the code will be updated to match.
