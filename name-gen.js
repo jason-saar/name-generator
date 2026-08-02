@@ -5,7 +5,7 @@ import { generateName, themes } from "./generate.js";
 const app = express();
 const PORT = 5553;
 
-const VALID_KINDS = ["person,", "place", "thing"];
+const VALID_KINDS = ["person", "place", "thing"];
 
 app.get("/generate", (req, res) => {
     const { kind, theme = "high_fantasy", count = "1", seed } = req.query;
