@@ -17,12 +17,14 @@ app.get("/generate", (req, res) => {
         });
     }
 
+    // theme validation
     if (!themes[theme]) {
         return res.status(400).json({
             error: `unknown theme "${theme}". Available themes: ${Object.keys(themes).join(", ")}`
         });
     }
 
+    // seed validation
     let actualSeed;
     if (seed !== undefined) {
         // parse int base 10
