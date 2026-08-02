@@ -37,4 +37,4 @@ export function generateName(kind, theme, rng) {
     return pattern.replace(/\{(\w+)\}/g, (match, slot) => pick(slots[slot], rng));
 }
 
-// TODO: generateMany
+export { themes };
